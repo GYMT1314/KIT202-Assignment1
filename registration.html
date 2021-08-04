@@ -36,6 +36,37 @@ e.g. password, anything else needed
       <h1>Registration</h1>
     </header>
     <main>
+	<div class="form-container">
+		<form>
+			<table>
+				<tr>
+					<td><label for="fname">Name:</label></td>
+					<td><input type="text" id="fname" name="fname"></td>
+				</tr>
+				
+				<tr>
+					<td><label for="email">Email:</label></td>
+					<td><input type="email" id="email" name="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></td> 
+				</tr>
+				
+				<tr>
+					<td><label for="pwd">Password:</label></td>
+					<td><input type="password" id="pwd" name="pwd" pattern="(?=.*\d).{6,8}" title="6 – 8 characters with at least one number."></td> 
+				</tr>
+				
+				<tr>
+					<td><label for="pwd">Confirm:</label></td>
+					<td><input type="password" id="cpwd" name="cpwd" pattern="(?=.*\d).{6,8}" title="6 – 8 characters with at least one number."></td> 
+				</tr>
+				
+				<tr>
+					<td></td>
+					<td><input type="submit" value="Submit"></td>
+				</tr>
+				
+			</table>
+		</form>
+	</div>
 	
     </main>
     <script>

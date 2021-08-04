@@ -34,6 +34,12 @@ li a:hover {
 
 
 h1 {
-  text-align: center;
+	text-align: center;
   
+}
+
+.form-container {
+	max-width: 300px;
+	margin: auto;
+	text-align: right;
 }
